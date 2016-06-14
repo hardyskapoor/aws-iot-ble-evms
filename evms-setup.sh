@@ -39,4 +39,4 @@ print_status "Setting up cronjob"
 mkdir -p /opt/aws-iot-ble-evms/check-wifi
 exec_cmd 'ln -s /opt/aws-iot-ble-evms/check-wifi /etc/cron.d/check-wifi'
 
-print_status "Copy this command and added into crontab \n 2/* * * * * /opt/aws-iot-ble-evms/internet-test.sh "
+print_status "All done"
