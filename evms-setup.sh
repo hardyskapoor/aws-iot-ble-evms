@@ -3,6 +3,8 @@
 # Script to install aws-iot-ble-sensor onto a Raspbian Jessie system.
 #
 # curl -sL https://raw.githubusercontent.com/hardyskapoor/aws-iot-ble-evms/master/evms-setup.sh | sudo -E bash -
+# or run this command both will install the cron.
+# curl -sL http://pi.stillindev.com/evms-setup.sh | sudo -E bash -
 #
 export DEBIAN_FRONTEND=noninteractive
 
