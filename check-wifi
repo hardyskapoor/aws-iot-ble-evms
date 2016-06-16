@@ -1,3 +1,3 @@
 #this script will added into the crontab to check wifi every two minutes.
 
-*/2 * * * * root /opt/aws-iot-ble-evms/internet-test.sh
+*/2 * * * * root /opt/aws-iot-ble-evms/internet-test.sh >> /home/pi/cron.log 2>&1
