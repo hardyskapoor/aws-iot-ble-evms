@@ -28,17 +28,22 @@ exec_cmd() {
     exec_cmd_nobail "$1" || bail
 }
 
-print_status "Running clone for aws-iot-ble-evms"
 
 cd /opt
+print_status "Removing old aws-iot-ble-evms folder"
+rm -rf aws-iot-ble-evms
+
+print_status "Running clone for aws-iot-ble-evms"
 
 exec_cmd 'git clone https://github.com/hardyskapoor/aws-iot-ble-evms.git'
 
 print_status "Make the wifi test executeable"
 chmod +x /opt/aws-iot-ble-evms/internet-test.sh
 
-print_status "Setting up cronjob"
-# mkdir -p /opt/aws-iot-ble-evms/check-wifi
+print_status "Removing old check-wifi cronbjob"
+rm -rf /etc/cron.d/check-wifi
+
+print_status "Setting up new cronjob"
 exec_cmd 'ln -s /opt/aws-iot-ble-evms/check-wifi /etc/cron.d/check-wifi'
 
 print_status "All done"
