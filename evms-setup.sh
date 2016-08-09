@@ -38,7 +38,8 @@ print_status "Running clone for aws-iot-ble-evms"
 exec_cmd 'git clone https://github.com/hardyskapoor/aws-iot-ble-evms.git'
 
 print_status "Make the wifi test executeable"
-chmod +x /opt/aws-iot-ble-evms/internet-test.sh
+#chmod +x /opt/aws-iot-ble-evms/internet-test.sh
+chmod +x /opt/aws-iot-ble-evms/wifi-rebooter.sh
 
 print_status "Removing old check-wifi cronbjob"
 rm -rf /etc/cron.d/check-wifi
