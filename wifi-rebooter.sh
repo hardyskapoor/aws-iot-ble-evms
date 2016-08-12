@@ -11,6 +11,5 @@ if [ $? != 0 ]
 then
     # Restart the wireless interface
     echo "Network is down attempting for netwrok reboot"
-    ifdown --force wlan0
-    ifup wlan0
+    sudo ifdown --force wlan0
 fi
