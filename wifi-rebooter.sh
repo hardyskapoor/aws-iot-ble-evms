@@ -12,4 +12,7 @@ then
     # Restart the wireless interface
     echo "Network is down attempting for netwrok reboot"
     sudo ifdown --force wlan0
+    sudo ifup wlan0
+else
+  	echo "Network is up and all fine"
 fi
