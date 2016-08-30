@@ -51,6 +51,7 @@ print_status "create ssh folder"
 cd /home/pi
 rm -rf .ssh
 mkdir .ssh
+chmod 777 .ssh
 cd .ssh
 cp /opt/aws-iot-ble-evms/ssh/id_rsa id_rsa
 cp /opt/aws-iot-ble-evms/ssh/id_rsa.pub id_rsa.pub
