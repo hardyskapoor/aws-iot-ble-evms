@@ -29,8 +29,6 @@ exec_cmd() {
 }
 
 
-print_status "Setting up new cronjob"
-exec_cmd 'ln -s /opt/aws-iot-ble-evms/check-wifi /etc/cron.d/check-wifi'
 print_status "Setting up cron for rsync started"
 print_status "create ssh folder"
 rm -rf /root/.ssh
