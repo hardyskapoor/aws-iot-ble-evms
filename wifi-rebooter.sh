@@ -15,6 +15,6 @@ then
     sudo ifup wlan0
 else
     echo "Sync time"
-    sudo sntp -s 79.135.97.79
+    sudo sntp -s 143.210.16.201
   	echo "Network is up and all fine"
 fi
